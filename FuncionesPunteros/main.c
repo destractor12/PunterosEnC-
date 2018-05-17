@@ -3,6 +3,7 @@
 
 void Intercambiar(int num1, int num2);
 void IntercambiarconPunteros(int *num1, int *num2);
+void ponerencero(int *num1);
 
 int main()
 {
@@ -11,11 +12,18 @@ int main()
     edadUno=22;
     edadDos=99;
     IntercambiarconPunteros(&edadUno, &edadDos);
+    ponerencero(&edadUno);
     printf("\n Edad 1:%d\n",edadUno);
     printf("\n Edad 2:%d",edadDos);
 
     return 0;
 }
+
+void ponerencero(int *num1)
+{
+    *num1=0;
+}
+
 
 void Intercambiar(int num1, int num2)
 {
